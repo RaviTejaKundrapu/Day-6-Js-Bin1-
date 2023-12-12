@@ -1,0 +1,16 @@
+
+/*1 topic: This css style name is used in js element */
+
+.headingStyleAdd{
+  color: Red;
+  font-size: 20px;
+}
+
+
+/*2 topic: This css style name is used in js element& manipulated*/
+
+.headingStyleRemoveandManipulate{
+  color: gold;
+  font-size: 29px;
+  font-family: "Rubik Bubbles";
+}
