@@ -1,0 +1,43 @@
+# HTML File
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input id="NewText">
+      
+     <ul id="parentContainer"></ul>
+     <button id="btn-El">Added Child every time</button>
+     <button id="childRemove">Remove Child</button>
+      
+      <script src="script.js"></script>
+  </body>
+</html>
+
+
+# Js File
+
+let parentContainerEl = document.getElementById('parentContainer')
+let btnEl = document.getElementById("btn-El")
+let NewText = document.getElementById("NewText")
+let childRemoveEl = document.getElementById("childRemove")
+
+
+btnEl.onclick = () =>{
+  if (NewText.value !== "") {
+  let chlidEl = document.createElement("li")
+  chlidEl.id = "C1"
+  chlidEl.textContent = NewText.value
+  parentContainer.appendChild(chlidEl)
+  NewText.value = ""
+  }
+}
+
+childRemoveEl.onclick = () =>{
+  let element = document.getElementById("C1")
+  parentContainer.removeChild(element)
+}
+
+// your day 6  completed
