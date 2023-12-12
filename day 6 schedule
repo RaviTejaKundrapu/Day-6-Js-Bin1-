@@ -1,0 +1,15 @@
+1.Adding css to js elements 
+
+element.classList.add(cssStyleName)
+
+2.removing it css styles in js. 
+This 2nd topic is related to 1st topic
+
+element.classList.remove(cssStyleName)
+
+3.removing child element in parent element
+
+ParentElement.removeChild(childElement)
+
+Program:
+Even number
